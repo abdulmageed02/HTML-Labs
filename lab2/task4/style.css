@@ -1,0 +1,104 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 100px 1fr ;
+}
+.section1{
+    background-color: white;
+    grid-row: 1/4;
+    height: 100vh;
+}
+.section1 h2{
+    margin: 1rem;
+    color: rgb(68, 68, 68);
+    text-align: center;
+    font-size: 4rem;
+}
+.section1 .items{
+    margin: 0.8rem;
+    text-align: center;
+}
+.section1 p{
+    margin: 0.6rem;
+    color: darkgrey;
+    font-weight: bold;
+}
+.section1 .icons{
+    margin: 1.4rem;
+    text-align: center;
+}
+.icons i {
+    color: darkgrey;
+    margin: 0rem 0.6rem;
+}
+.section1 text{
+    margin: 1rem;
+}
+.text h3{
+    text-align: center;
+    color: darkgrey;
+    margin: 0.4rem;
+}
+.text p{
+   
+    padding: 0.4rem;
+    color: darkgrey;
+}
+
+.header{
+    background-color: rgb(255, 191, 191);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.header div{
+    margin: 0rem 1.4rem;
+    color: white;
+    font-weight: bold;
+}
+.fheader{
+    color: darkgrey;
+    text-align: center;
+}
+
+.flic{
+    margin: 1.6rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+}
+
+.flic img{
+    width: 80%;
+    height: 80%;
+  
+}
+ 
+.imges{
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,12vw) ;
+}
+.imges div{
+    background-color: darkgrey;
+
+}
+.imges img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity 2s;
+}
+.imges img:hover{
+    opacity: 1; 
+}
+

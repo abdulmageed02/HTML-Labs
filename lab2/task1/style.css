@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 10px;
+border: none;
+color: white;
+}
+#start{
+    background-color: rgb(33, 82, 82);
+}
+#stop{
+    background-color: rgb(184, 33, 33);
+}
+#pause{
+    background-color: rgb(7, 48, 10);
+}
+#animation{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 212);
+    /* margin: 10px;
+    animation:sectionanimation ;
+    animation-duration:4s;
+    animation-iteration-count:infinite; */
+}
+@keyframes sectionanimation{
+    0%{
+        top:50px;
+        left:10px;
+        background-color:yellow;
+    }
+    25%{
+        left:200px;
+        top:50px;
+        background-color:pink;
+    }
+    50%{
+        left:200px;
+        top:250px;
+        background-color:red;
+    }
+    75%{
+        left:10px;
+        top:250px;
+        background-color:blue;
+    }
+    100%{
+        top:50px;
+        left:10px;
+        background-color:yellow;
+    }
+}
+.animation{
+    width:100px;
+    height:100px;
+    position:absolute;
+    animation:sectionanimation;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    
+}
+
+.pause{
+    animation-play-state: paused;
+    transition: 1s;
+}
+.pause:hover{
+    transform: scale(1.1);
+}

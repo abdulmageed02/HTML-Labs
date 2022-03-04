@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="First.css">
+</head>
+
+<body>
+    <div class="Total">
+        <div class="Video">
+            <video src="Videos/1.mp4" controls>
+            </video>
+        </div>
+        <div class="Rest_of_videos">
+            <img src="Images/1.png" onclick="Change_source(this);">
+            <img src="Images/2.png" onclick="Change_source(this);">
+            <img src="Images/3.png" onclick="Change_source(this);">
+            <img src="Images/4.png" onclick="Change_source(this);">
+            <img src="Images/5.png" onclick="Change_source(this);">
+            <img src="Images/6.png" onclick="Change_source(this);">
+        </div>
+        <div class="Controls">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="scale">Scale</button>
+            <button id="descale">De-Scale</button>
+            <button id="full_screen">Full Screen</button>
+            <button id="mute">mute</button>
+            <button id="unmute">unmute</button>
+        </div>
+    </div>
+    <script src="First.js"></script>
+</body>
+
+</html>

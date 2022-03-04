@@ -1,0 +1,32 @@
+.first_div {
+  border: 1px solid salmon;
+  width: 80vw;
+  height: 20vh;
+  margin: 10px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_div > img {
+  height: 100%;
+  width: 15%;
+  border-radius: 20px;
+}
+
+.second_div {
+  border: 1px solid salmon;
+  width: 80vw;
+  height: 60vh;
+  margin: 10px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.second_div > img {
+  height: 30%;
+  width: 15%;
+  border-radius: 20px;
+}

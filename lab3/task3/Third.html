@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="Third.css">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB90FxtYG_ybAYXGkz0ybkmkboE2nEbezI"></script>
+    <script>
+        function get_map() {
+            console.log("smth");
+            const my_lat_long = new google.maps.LatLng(arguments[0].coords.latitude, arguments[0].coords.longitude);
+            let specs = { zoom: 17, center: my_lat_long }
+            let map = new google.maps.Map(the_second_div, specs);
+            let marker = new google.maps.Marker({ position: { lat: arguments[0].coords.latitude, lng: arguments[0].coords.longitude }, map: map });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="first_div">
+        <button value="coords">Actual map</button>
+        <button value="coords">get Lat & Lon</button>
+    </div>
+
+    <div id="second_div" class="second_div">
+
+    </div>
+    <script src="Third.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculations</title>
+    <link rel="stylesheet" href="Fourth.css">
+    <script>
+        function get_result_add() {
+            document.getElementsByName("result")[0].value = 10;
+            document.getElementsByName("result")[1].value = 25;
+        }
+    </script>
+</head>
+
+<body onload="get_result_add()">
+    <div class="total">
+        <div class="addition">
+            <h1>Addition</h1>
+            <form onchange="result.value=parseInt(first_number.value)+parseInt(second_number.value)">
+                <input min=1 max=10 type="number" value="5" name="first_number">
+                <span style="font-size: 20px; font-weight: bolder;">+</span>
+                <input min=1 max=10 type="number" value="5" name="second_number">
+                <span style="font-size: 20px; font-weight: bolder;">=</span>
+                <output for="first_number second_number" readonly name="result" />
+            </form>
+        </div>
+
+        <div class="multiplication">
+            <h1>multiplication</h1>
+            <form onchange="result.value=parseInt(first_number.value)*parseInt(second_number.value)">
+                <input min=1 max=10 type="number" value="5" name="first_number">
+                <span style="font-size: 20px; font-weight: bolder;">X</span>
+                <input min=1 max=10 type="number" value="5" name="second_number">
+                <span style="font-size: 20px; font-weight: bolder;">=</span>
+                <output for="first_number second_number" readonly name="result" />
+            </form>
+        </div>
+
+    </div>
+    <script src="Fourth.js"></script>
+</body>
+
+</html>

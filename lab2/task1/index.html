@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="button">
+        <button id="start"> start</button>
+        <button id="stop"> stop</button>
+        <button id="pause"> pause</button>
+    </div>
+    <div id="animation"></div>
+
+
+    <script >let start =document.getElementById("start");
+        let pause =document.getElementById("pause");
+        let stop =document.getElementById("stop");
+        let animation=document.getElementById("animation");
+        // console.log(stop)
+        
+        start.addEventListener("click",function(){
+           
+            animation.classList.add('animation')
+        });
+        
+        stop.addEventListener("click",function(){
+            
+            animation.classList.remove('animation');
+        });
+        
+        
+        animation.addEventListener("mouseenter",function(){
+            animation.classList.add('pause')
+        
+        })
+        
+        animation.addEventListener("mouseleave",function(){
+            animation.classList.remove('pause')
+        })
+        pause.addEventListener("click",function(){
+            if(animation.classList.contains('pause') && animation.classList.contains('animation')){
+                console.log("rem");
+                animation.classList.remove('pause')
+            }
+           
+            else if(animation.classList.contains('animation')){
+                animation.classList.add('pause')
+                console.log("add");
+            }
+        
+            else{
+        console.log("please start animation first");
+        
+            }
+        });
+        </script>
+</body>
+</html>

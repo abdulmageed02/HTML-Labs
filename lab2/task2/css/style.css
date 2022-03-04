@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: radial-gradient(circle, white, rgb(216, 198, 214));
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    border: 2px solid rgb(213, 235, 19);
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: transform 4s;
+    box-shadow: 15px 15px 15px rgb(178, 32, 117);
+}
+
+.container:hover {
+    transform: skew(30deg);
+    box-shadow: 15px 15px 15px rgb(32, 161, 178);
+}
+
+.container:active {
+    transform: scale(0.5);
+    background-image: radial-gradient(circle, white, rgb(33, 114, 146));
+}
+
+section {
+    background-image: radial-gradient(circle, white, rgb(218, 238, 185));
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.content {
+    width: 30%;
+    height: 90%;
+    margin: 10px auto;
+    column-count: 3;
+    overflow: scroll;
+    column-rule: 3px solid red;
+    column-gap: 20px;
+    word-wrap: break-word;
+}
+
+mark {
+    background-color: red;
+}
+
+mark:hover {
+    background-image: linear-gradient(red, yellow);
+}
+
+.content:hover {
+    text-decoration: underline;
+}
+
+.secImages {
+    background-image: radial-gradient(circle, white, rgb(72, 157, 168));
+    background-color: lightgrey;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 90%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+    padding: 5px;
+}
+
+.image {
+    width: 25%;
+    height: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 15px 15px 15px rgb(178, 32, 122);
+    transition: transform 2s;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: transform 2s;
+    box-shadow: 15px 15px 15px rgb(178, 73, 32);
+}
+
+img:active {
+    transform: scale(2.5);
+    transition: transform 2s;
+    box-shadow: 15px 15px 15px rgb(115, 178, 32);
+}
+
+
+
+@media screen and (max-width:990px){
+
+    .content{    
+        column-count: 1;
+    }
+    .secImages .image{
+        width: 70%;
+        margin:10px;
+        transform: scale(.8);
+        transition: all 1s;
+    }
+    .secImages .image {
+        transform: skew(-20deg);
+        transition: 2s ;
+     
+    }   
+
+}
